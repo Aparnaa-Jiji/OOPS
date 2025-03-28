@@ -30,27 +30,41 @@ public class EmployeeMain {  // Class that contains the main method
         int No;
         Employee emp[] = new Employee[n];
 
+        Scanner sc = new Scanner(System.in);
+
         // Read employee details
         for (i = 0; i < n; i++) {
             emp[i] = new Employee();
             emp[i].read();
         }
 
-        // Search loop
-        System.out.println("Search");
+        // Search loop with exit condition
+        System.out.println("Search for Employee (Enter -1 to exit)");
         while (true) {
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Enter Employee ID:");
+            System.out.print("Enter Employee ID: ");
             No = Integer.parseInt(sc.nextLine());
 
-           
+            // Exit condition
+            if (No == -1) {
+                System.out.println("Exiting search...");
+                break;
+            }
+
+            // Search for employee
+            boolean found = false;
             for (i = 0; i < n; i++) {
                 if (emp[i].eNo == No) {
                     emp[i].display();
+                    found = true;
                     break;
                 }
             }
-            
+
+            if (!found) {
+                System.out.println("Employee not found. Try again.");
+            }
         }
+
+        sc.close();
     }
 }
