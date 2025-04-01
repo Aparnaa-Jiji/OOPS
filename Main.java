@@ -78,3 +78,17 @@ public class Main {
         scanner.close();
     }
 }
+
+
+Output:
+Enter Employee ID: 12
+Enter Employee Name: Archana
+Enter Employee Salary: 28000
+Enter Subjects Taught: Maths
+
+Employee ID: 12
+Name: Archana
+Salary: 28000.0
+Address: Kottayam
+Department: IT
+Subjects Taught: Maths
