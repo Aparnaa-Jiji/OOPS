@@ -143,3 +143,18 @@ public class MainBook {
         scanner.close();
     }
 }
+
+
+
+Output:
+Enter book category (Literature/Fiction): Fiction
+Enter book title: My Life
+Enter book author: Arundathi
+Enter book price: 200 
+Enter fiction type (e.g., Mystery, Fantasy, etc.): Autobiograpgy
+Is it a bestseller? (true/false): true
+Title: My Life
+Author: Arundathi
+Price: 200.0
+Fiction Type: Autobiograpgy
+Best Seller: Yes
